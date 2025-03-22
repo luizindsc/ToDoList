@@ -1,5 +1,7 @@
 :root {
     --grey: #322E32;
+    --grey2: #292529;
+    --grey3: #221f22;
     --green1: #588157;
 }
 
@@ -9,11 +11,22 @@
 body {
     background-color: #322E32;
     font-family: 'Rubik';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 
+
 h1 {
-    color: white;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -21,34 +34,34 @@ h1 {
 
 
 .addTask {
-    gap: 20px;
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
+#addTaskBtn, 
+#taskInput {
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+}
 
+#taskInput {
+    width: 20rem;
+    border-radius: 1rem;
+}
 
 #addTaskBtn {
-    background-color: var(--green1);
+    background-color: var(--grey2);
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    border: none;
-    border-radius: 60px;
-    font-size: 20px;
-    width: 42px;
-    height: 42px;
+    transition: .6s;
 }
 
 #addTaskBtn:hover {
-    background-color: #4d774f;
+    background-color: var(--grey3);
 }
-
-
-
-#taskInput {
-    padding-left: 25px;
-    border: none;
-    border-radius: 60px;
-    font-size: 20px;
-    height: 42px;
-}   
