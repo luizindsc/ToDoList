@@ -1,27 +1,53 @@
+:root {
+    --grey: #322E32;
+    --green1: #588157;
+}
+
+
+
+
 body {
+    background-color: #322E32;
     font-family: 'Rubik';
 }
 
 
 h1 {
+    color: white;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
 }
 
 
-
+.addTask {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
 
 
 #addTaskBtn {
+    background-color: var(--green1);
+    cursor: pointer;
+    border: none;
     border-radius: 60px;
     font-size: 20px;
     width: 42px;
     height: 42px;
 }
 
+#addTaskBtn:hover {
+    background-color: #4d774f;
+}
+
+
+
 #taskInput {
+    padding-left: 25px;
+    border: none;
     border-radius: 60px;
     font-size: 20px;
     height: 42px;
